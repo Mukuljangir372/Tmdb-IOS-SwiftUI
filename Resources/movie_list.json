@@ -1,0 +1,126 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "poster_path": "/6DrHO1jr3qVrViUO6s6kFiAGM7.jpg",
+      "adult": false,
+      "overview": "From DC Comics comes the Suicide Squad, an antihero team of incarcerated supervillains who act as deniable assets for the United States government, undertaking high-risk black ops missions in exchange for commuted prison sentences.",
+      "release_date": "2016-08-03",
+      "genre_ids": [
+        14,
+        28,
+        80
+      ],
+      "id": 297761,
+      "original_title": "Suicide Squad",
+      "original_language": "en",
+      "title": "Suicide Squad",
+      "backdrop_path": "/ndlQ2Cuc3cjTL7lTynw6I4boP4S.jpg",
+      "popularity": 48.261451,
+      "vote_count": 1466,
+      "video": false,
+      "vote_average": 5.91
+    },
+    {
+      "poster_path": "/lFSSLTlFozwpaGlO31OoUeirBgQ.jpg",
+      "adult": false,
+      "overview": "The most dangerous former operative of the CIA is drawn out of hiding to uncover hidden truths about his past.",
+      "release_date": "2016-07-27",
+      "genre_ids": [
+        28,
+        53
+      ],
+      "id": 324668,
+      "original_title": "Jason Bourne",
+      "original_language": "en",
+      "title": "Jason Bourne",
+      "backdrop_path": "/AoT2YrJUJlg5vKE3iMOLvHlTd3m.jpg",
+      "popularity": 30.690177,
+      "vote_count": 649,
+      "video": false,
+      "vote_average": 5.25
+    },
+    {
+      "poster_path": "/hU0E130tsGdsYa4K9lc3Xrn5Wyt.jpg",
+      "adult": false,
+      "overview": "One year after outwitting the FBI and winning the public’s adulation with their mind-bending spectacles, the Four Horsemen resurface only to find themselves face to face with a new enemy who enlists them to pull off their most dangerous heist yet.",
+      "release_date": "2016-06-02",
+      "genre_ids": [
+        28,
+        12,
+        35,
+        80,
+        9648,
+        53
+      ],
+      "id": 291805,
+      "original_title": "Now You See Me 2",
+      "original_language": "en",
+      "title": "Now You See Me 2",
+      "backdrop_path": "/zrAO2OOa6s6dQMQ7zsUbDyIBrAP.jpg",
+      "popularity": 29.737342,
+      "vote_count": 684,
+      "video": false,
+      "vote_average": 6.64
+    },
+    {
+      "poster_path": "/h28t2JNNGrZx0fIuAw8aHQFhIxR.jpg",
+      "adult": false,
+      "overview": "A recently cheated on married woman falls for a younger man who has moved in next door, but their torrid affair soon takes a dangerous turn.",
+      "release_date": "2015-01-23",
+      "genre_ids": [
+        53
+      ],
+      "id": 241251,
+      "original_title": "The Boy Next Door",
+      "original_language": "en",
+      "title": "The Boy Next Door",
+      "backdrop_path": "/vj4IhmH4HCMZYYjTMiYBybTWR5o.jpg",
+      "popularity": 22.279864,
+      "vote_count": 628,
+      "video": false,
+      "vote_average": 4.13
+    },
+    {
+      "poster_path": "/vOipe2myi26UDwP978hsYOrnUWC.jpg",
+      "adult": false,
+      "overview": "An orphan boy is raised in the Jungle with the help of a pack of wolves, a bear and a black panther.",
+      "release_date": "2016-04-07",
+      "genre_ids": [
+        12,
+        18,
+        14
+      ],
+      "id": 278927,
+      "original_title": "The Jungle Book",
+      "original_language": "en",
+      "title": "The Jungle Book",
+      "backdrop_path": "/eIOTsGg9FCVrBc4r2nXaV61JF4F.jpg",
+      "popularity": 21.104822,
+      "vote_count": 1085,
+      "video": false,
+      "vote_average": 6.42
+    },
+    {
+      "poster_path": "/tgfRDJs5PFW20Aoh1orEzuxW8cN.jpg",
+      "adult": false,
+      "overview": "Arthur Bishop thought he had put his murderous past behind him when his most formidable foe kidnaps the love of his life. Now he is forced to travel the globe to complete three impossible assassinations, and do what he does best, make them look like accidents.",
+      "release_date": "2016-08-25",
+      "genre_ids": [
+        80,
+        28,
+        53
+      ],
+      "id": 278924,
+      "original_title": "Mechanic: Resurrection",
+      "original_language": "en",
+      "title": "Mechanic: Resurrection",
+      "backdrop_path": "/3oRHlbxMLBXHfMqUsx1emwqiuQ3.jpg",
+      "popularity": 20.375179,
+      "vote_count": 119,
+      "video": false,
+      "vote_average": 4.59
+    }
+  ]
+  
+}
