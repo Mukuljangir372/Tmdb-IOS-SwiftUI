@@ -25,7 +25,7 @@ struct NetworkMovie: Codable{
         guard let url = poster_path else {
             return nil
         }
-        return URL(string: "https://image.tmdb.org/t/p/w500\(url)")
+        return URL(string: "\(TmdbEndpoints.shared.image500Url)\(url)")
     }
 }
 

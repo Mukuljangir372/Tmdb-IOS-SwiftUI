@@ -27,19 +27,37 @@ struct MovieView: View {
     }
 }
 struct MovieListView: View {
+    
+    @StateObject private var viewModel = MovieListState()
+    
     var body: some View {
         NavigationView {
-            List(NetworkMovie.previewData,id: \.id){ movie in
-                MovieView(movie: movie)
-                    .listRowInsets(
-                        EdgeInsets.init(top: 10, leading: 18, bottom: 10, trailing: 10)
-                    )
+            switch viewModel.movieNetworkResult {
+            case .loading:
+                ProgressView()
+            case .failure(let error):
+                Text("\(error.localizedDescription)")
+            case .success(let movies):
+                List(movies.results,id: \.id){ movie in
+                    MovieView(movie: movie)
+                        .listRowInsets(
+                            EdgeInsets.init(top: 10, leading: 18, bottom: 10, trailing: 10)
+                        )
+                }
+                .refreshable{
+                    loadMovies()
+                }
+                .listStyle(.plain)
+                .navigationTitle("Movies")
+            default:
+                ProgressView()
             }
-            .refreshable {
-                
-            }
-            .listStyle(.plain)
-            .navigationTitle("Movies")
+        }.onAppear(perform: loadMovies)
+    }
+    
+    private func loadMovies() {
+        Task{
+            await viewModel.getMovies()
         }
     }
 }

@@ -20,6 +20,11 @@
 		25C85DEA284C9071001B9BCD /* BundleUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C85DE9284C9071001B9BCD /* BundleUtils.swift */; };
 		25C85DEC284C917E001B9BCD /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C85DEB284C917E001B9BCD /* Utils.swift */; };
 		25C85DEF284CA87B001B9BCD /* LoadingImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C85DEE284CA87B001B9BCD /* LoadingImage.swift */; };
+		25C85DF4284CB17C001B9BCD /* TmdbWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C85DF3284CB17C001B9BCD /* TmdbWebService.swift */; };
+		25C85DF6284CB18B001B9BCD /* TmdbEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C85DF5284CB18B001B9BCD /* TmdbEndpoints.swift */; };
+		25C85DF8284CC576001B9BCD /* MovieWebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C85DF7284CC575001B9BCD /* MovieWebServices.swift */; };
+		25C85DFB284CC5D0001B9BCD /* MovieCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C85DFA284CC5D0001B9BCD /* MovieCategory.swift */; };
+		25C85DFF284CCBE3001B9BCD /* MovieListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C85DFE284CCBE3001B9BCD /* MovieListState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +42,11 @@
 		25C85DE9284C9071001B9BCD /* BundleUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleUtils.swift; sourceTree = "<group>"; };
 		25C85DEB284C917E001B9BCD /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		25C85DEE284CA87B001B9BCD /* LoadingImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingImage.swift; sourceTree = "<group>"; };
+		25C85DF3284CB17C001B9BCD /* TmdbWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TmdbWebService.swift; sourceTree = "<group>"; };
+		25C85DF5284CB18B001B9BCD /* TmdbEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TmdbEndpoints.swift; sourceTree = "<group>"; };
+		25C85DF7284CC575001B9BCD /* MovieWebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieWebServices.swift; sourceTree = "<group>"; };
+		25C85DFA284CC5D0001B9BCD /* MovieCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCategory.swift; sourceTree = "<group>"; };
+		25C85DFE284CCBE3001B9BCD /* MovieListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				25C85DCB284C7873001B9BCD /* MovieListView.swift */,
+				25C85DFE284CCBE3001B9BCD /* MovieListState.swift */,
 			);
 			path = UiMovieList;
 			sourceTree = "<group>";
@@ -151,6 +162,8 @@
 		25C85DD9284C7F25001B9BCD /* network */ = {
 			isa = PBXGroup;
 			children = (
+				25C85DF7284CC575001B9BCD /* MovieWebServices.swift */,
+				25C85DFA284CC5D0001B9BCD /* MovieCategory.swift */,
 			);
 			path = network;
 			sourceTree = "<group>";
@@ -175,6 +188,7 @@
 		25C85DE6284C8FB6001B9BCD /* network */ = {
 			isa = PBXGroup;
 			children = (
+				25C85DF2284CB16C001B9BCD /* tmdb */,
 				25C85DE7284C8FC3001B9BCD /* models */,
 			);
 			path = network;
@@ -204,6 +218,15 @@
 				25C85DEE284CA87B001B9BCD /* LoadingImage.swift */,
 			);
 			path = CommonUiResources;
+			sourceTree = "<group>";
+		};
+		25C85DF2284CB16C001B9BCD /* tmdb */ = {
+			isa = PBXGroup;
+			children = (
+				25C85DF3284CB17C001B9BCD /* TmdbWebService.swift */,
+				25C85DF5284CB18B001B9BCD /* TmdbEndpoints.swift */,
+			);
+			path = tmdb;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,10 +301,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				25C85DEA284C9071001B9BCD /* BundleUtils.swift in Sources */,
+				25C85DF6284CB18B001B9BCD /* TmdbEndpoints.swift in Sources */,
+				25C85DFF284CCBE3001B9BCD /* MovieListState.swift in Sources */,
 				25C85DB9284C67FC001B9BCD /* ContentView.swift in Sources */,
 				25C85DE3284C80A8001B9BCD /* NetworkError.swift in Sources */,
 				25C85DDC284C7F46001B9BCD /* NetworkMovie.swift in Sources */,
+				25C85DF8284CC576001B9BCD /* MovieWebServices.swift in Sources */,
 				25C85DEF284CA87B001B9BCD /* LoadingImage.swift in Sources */,
+				25C85DF4284CB17C001B9BCD /* TmdbWebService.swift in Sources */,
+				25C85DFB284CC5D0001B9BCD /* MovieCategory.swift in Sources */,
 				25C85DCE284C78E2001B9BCD /* SearchMoviesView.swift in Sources */,
 				25C85DEC284C917E001B9BCD /* Utils.swift in Sources */,
 				25C85DB7284C67FC001B9BCD /* TmdbApp.swift in Sources */,

@@ -8,6 +8,7 @@
 import Foundation
 
 enum NetworkResult<T>{
+    case idle
     case loading
     case failure(NetworkError)
     case success(T)
