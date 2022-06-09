@@ -13,10 +13,10 @@ struct LoadingImage: View {
     let width: CGFloat?
     let height: CGFloat
     let radius: CGFloat?
+    var overlayIcon: String? = ""
     
     var body: some View {
-        AsyncImage(url: url,content: view)
-            .frame(width: width, height: height)
+        AsyncImage(url: url,content: view).frame(width: width, height: height)
     }
     
     @ViewBuilder
@@ -25,7 +25,7 @@ struct LoadingImage: View {
         case .empty:
             ProgressView()
         case .failure(_):
-            VStack{
+            VStack(alignment: .leading){
                 Image(systemName: "photo")
                     .foregroundColor(.gray)
             }
@@ -36,6 +36,11 @@ struct LoadingImage: View {
             .frame(width: width, height: height)
             .cornerRadius(radius!)
             .clipped()
+            .overlay(content: {
+                Image(systemName: overlayIcon ?? "")
+                    .font(.system(size: 50))
+                    .foregroundColor(.white)
+            })
         default:
             Text("failed to load image")
                 .foregroundColor(.blue)

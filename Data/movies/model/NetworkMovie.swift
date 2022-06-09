@@ -12,13 +12,23 @@ struct NetworkMovie: Codable{
     let title: String?
     let overview: String?
     let poster_path: String?
+    let release_date: String?
+    let vote_average: Double?
     
     var titleText: String {
         title ?? ""
     }
-    
     var overviewText: String {
         overview ?? ""
+    }
+    var releaseDateText: String {
+        release_date ?? ""
+    }
+    var rating: Int {
+        guard let rate = vote_average else {
+            return 0
+        }
+        return Int(rate / 2)
     }
     
     var posterUrl: URL? {

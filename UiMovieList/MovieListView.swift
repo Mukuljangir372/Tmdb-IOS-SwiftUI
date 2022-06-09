@@ -12,9 +12,9 @@ struct MovieView: View {
     
     var body: some View {
         ZStack {
-            NavigationLink(destination: SearchMoviesView()){}
-            HStack {
-                LoadingImage(url: movie.posterUrl, width: 80, height: 80, radius: 10)
+            NavigationLink(destination: MovieDetailView(movie: movie)){}
+            HStack() {
+                LoadingImage(url: movie.posterUrl, width: 90, height: 90, radius: 10)
                 VStack(alignment: .leading){
                     Text("\(movie.titleText)")
                         .font(.headline)
@@ -22,6 +22,7 @@ struct MovieView: View {
                         .lineLimit(3)
                         .font(.body)
                 }
+                Spacer()
             }
         }
     }
